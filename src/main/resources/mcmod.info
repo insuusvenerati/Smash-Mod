@@ -1,0 +1,16 @@
+[
+{
+  "modid": "SmashMod",
+  "name": "Smash Mod",
+  "description": "A mod for Smash",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Stiforr"],
+  "credits": "Everyone in #minecraftforge","[@Vigaro]", [@ThePsionic]
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -6,8 +6,4 @@ public abstract class CommonProxy implements IProxy
 		return 0;
 	}
 	
-	public boolean test()
-	{
-		return true;
-	}
 }

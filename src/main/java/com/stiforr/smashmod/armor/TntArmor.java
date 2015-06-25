@@ -44,7 +44,6 @@ public class TntArmor extends ItemArmor
 		
 		if(player.getCurrentArmor(0) != null){
 			ItemStack boots = player.getCurrentArmor(0);
-			if(boots.getItem() == ModItems.tntBoots);
 			}
 		}
 

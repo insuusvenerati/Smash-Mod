@@ -14,7 +14,7 @@ public class TntAxe extends ItemAxe
 	public TntAxe(ToolMaterial material) {
 		super(material);
 		this.setUnlocalizedName("tntAxe");
-		this.setTextureName(Reference.MOD_ID + ":tritAxe");
+		this.setTextureName(Reference.MOD_ID + ":tntAxe");
 		this.setCreativeTab(CreativeTabs.tabCombat);
 	}
 	

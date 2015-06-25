@@ -1,5 +1,6 @@
 package com.stiforr.smashmod.tool;
 
+import com.stiforr.smashmod.creativetab.CreativeTabSmash;
 import com.stiforr.smashmod.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -15,7 +16,7 @@ public class TntAxe extends ItemAxe
 		super(material);
 		this.setUnlocalizedName("tntAxe");
 		this.setTextureName(Reference.MOD_ID + ":tntAxe");
-		this.setCreativeTab(CreativeTabs.tabCombat);
+		this.setCreativeTab(CreativeTabSmash.Smash_Tab);
 	}
 	
 	

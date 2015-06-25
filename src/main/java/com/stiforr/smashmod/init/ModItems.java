@@ -34,5 +34,6 @@ public class ModItems
 		GameRegistry.registerItem(tntArmorChest, "tntArmorChest");
 		GameRegistry.registerItem(tntLegs, "tntLegs");
 		GameRegistry.registerItem(tntBoots, "tntBoots");
+		GameRegistry.registerItem(tntAxe, "tntAxe");
 	}
 }

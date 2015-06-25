@@ -1,6 +1,7 @@
 package com.stiforr.smashmod;
 
 import com.stiforr.smashmod.init.ModItems;
+import com.stiforr.smashmod.init.Recipes;
 import com.stiforr.smashmod.proxy.CommonProxy;
 import com.stiforr.smashmod.reference.Reference;
 
@@ -23,6 +24,7 @@ public class SmashMod
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		ModItems.init();
+		Recipes.init();
 	}
 	
 	@Mod.EventHandler

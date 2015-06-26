@@ -1,7 +1,9 @@
 package com.stiforr.smashmod.proxy;
 
 import com.stiforr.smashmod.SmashMod;
+import com.stiforr.smashmod.entity.EntityBear;
 import com.stiforr.smashmod.entity.EntitySmash;
+import com.stiforr.smashmod.rendering.entities.RenderBear;
 import com.stiforr.smashmod.rendering.entities.RenderSmash;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
@@ -18,11 +20,13 @@ public class ClientProxy extends CommonProxy
 
 	public void registerRenderers(){
 		RenderingRegistry.registerEntityRenderingHandler(EntitySmash.class, new RenderSmash(new ModelBiped(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBear.class, new RenderBear(new ModelBiped(), 0));
 	}
 
 	public void registerEntities(){
 		ModEntityID = EntityRegistry.findGlobalUniqueEntityId();
 		EntityRegistry.registerModEntity(EntitySmash.class, "EntitySmash", ModEntityID++, SmashMod.instance, 80, 1, false);
+		EntityRegistry.registerModEntity(EntityBear.class, "EntityBear", ModEntityID++, SmashMod.instance, 80, 1, false);
 
 	}
 }

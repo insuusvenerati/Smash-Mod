@@ -3,6 +3,7 @@ package com.stiforr.smashmod.init;
 import com.stiforr.smashmod.SmashMod;
 import com.stiforr.smashmod.armor.TntArmor;
 import com.stiforr.smashmod.creativetab.CreativeTabSmash;
+import com.stiforr.smashmod.items.BearSpawner;
 import com.stiforr.smashmod.items.SmashSpawner;
 import com.stiforr.smashmod.reference.Reference;
 import com.stiforr.smashmod.tool.TntAxe;
@@ -29,6 +30,7 @@ public class ModItems
 	public static final TntAxe tntAxe = new TntAxe(tntToolMaterial);
 
 	public static Item smashSpawner = new SmashSpawner().setTextureName(Reference.MOD_ID + ":smashSpawner");
+	public static Item bearSpawner = new BearSpawner().setTextureName(Reference.MOD_ID + ":bearSpawner");
 	
 	public static void init()
 	{
@@ -38,5 +40,6 @@ public class ModItems
 		GameRegistry.registerItem(tntBoots, "tntBoots");
 		GameRegistry.registerItem(tntAxe, "tntAxe");
 		GameRegistry.registerItem(smashSpawner, "smashSpawner");
+		GameRegistry.registerItem(bearSpawner, "bearSpawner");
 	}
 }

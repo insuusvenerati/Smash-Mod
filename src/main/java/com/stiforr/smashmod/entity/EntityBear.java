@@ -1,19 +1,19 @@
 package com.stiforr.smashmod.entity;
 
-        import com.stiforr.smashmod.init.ModItems;
-        import net.minecraft.entity.EntityAgeable;
-        import net.minecraft.entity.ai.EntityAIFollowParent;
-        import net.minecraft.entity.ai.EntityAIPanic;
-        import net.minecraft.entity.ai.EntityAITempt;
-        import net.minecraft.entity.ai.EntityAIWander;
-        import net.minecraft.entity.passive.EntityAnimal;
-        import net.minecraft.world.World;
+import com.stiforr.smashmod.init.ModItems;
+import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.ai.EntityAIFollowParent;
+import net.minecraft.entity.ai.EntityAIPanic;
+import net.minecraft.entity.ai.EntityAITempt;
+import net.minecraft.entity.ai.EntityAIWander;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.world.World;
 
 /**
- * Created by Sean Norwood on 6/25/2015.
+ * Created by Sean Norwood on 6/26/2015.
  */
-public class EntitySmash extends EntityAnimal {
-    public EntitySmash(World world) {
+public class EntityBear extends EntityAnimal{
+        public EntityBear(World world) {
         super(world);
         setSize(1, 2);
         preventEntitySpawning = true;
@@ -23,7 +23,7 @@ public class EntitySmash extends EntityAnimal {
         this.tasks.addTask(3, new EntityAIFollowParent(this, 1.0D));
     }
 
-    public EntitySmash(World world, double x, double y, double z){
+        public EntityBear(World world, double x, double y, double z){
         this(world);
         setPosition(x, y, z);
     }
@@ -37,3 +37,4 @@ public class EntitySmash extends EntityAnimal {
         return new EntitySmash(worldObj);
     }
 }
+

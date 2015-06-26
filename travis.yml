@@ -1,0 +1,15 @@
+language: java
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk6
+install:
+  - chmod +x gradlew
+  - rm -rf build/libs
+script:
+  - ./gradlew setupCIWorkspace
+  - ./gradlew build
+notifications:
+  email: false
+  irc:
+    - "irc.esper.net#Stiforr"

@@ -25,6 +25,9 @@ public class SmashMod
 	{
 		ModItems.init();
 		Recipes.init();
+
+		proxy.registerEntities();
+		proxy.registerRenderers();
 	}
 	
 	@Mod.EventHandler

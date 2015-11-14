@@ -17,5 +17,26 @@ public class Recipes {
                                         " s ",
                                         't', new ItemStack(Blocks.tnt),
                                         's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.tntBoots),
+                                         "   ",
+                                         "t t",
+                                         "t t",
+                                         't', new ItemStack(Blocks.tnt));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.tntHelmet),
+                                         "   ",
+                                         "ttt",
+                                         "t t",
+                                         't', new ItemStack(Blocks.tnt));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.tntArmorChest),
+                                         "t t",
+                                         "ttt",
+                                         "ttt",
+                                         't', new ItemStack(Blocks.tnt));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.tntLegs),
+                                         "ttt",
+                                         "t t",
+                                         "t t",
+                                         't', new ItemStack(Blocks.tnt));
+
     }
 }

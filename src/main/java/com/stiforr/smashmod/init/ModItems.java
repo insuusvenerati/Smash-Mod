@@ -7,6 +7,7 @@ import com.stiforr.smashmod.items.BearSpawner;
 import com.stiforr.smashmod.items.SmashSpawner;
 import com.stiforr.smashmod.reference.Reference;
 import com.stiforr.smashmod.tool.TntAxe;
+import com.stiforr.smashmod.tool.TntSword;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -28,6 +29,7 @@ public class ModItems
 	
 	//Tools
 	public static final TntAxe tntAxe = new TntAxe(tntToolMaterial);
+	public static final TntSword tntSword = new TntSword(tntToolMaterial);
 
 	public static Item smashSpawner = new SmashSpawner().setTextureName(Reference.MOD_ID + ":smashSpawner");
 	public static Item bearSpawner = new BearSpawner().setTextureName(Reference.MOD_ID + ":bearSpawner");
@@ -39,6 +41,7 @@ public class ModItems
 		GameRegistry.registerItem(tntLegs, "tntLegs");
 		GameRegistry.registerItem(tntBoots, "tntBoots");
 		GameRegistry.registerItem(tntAxe, "tntAxe");
+		GameRegistry.registerItem(tntSword, "tntSword");
 		GameRegistry.registerItem(smashSpawner, "smashSpawner");
 		GameRegistry.registerItem(bearSpawner, "bearSpawner");
 	}

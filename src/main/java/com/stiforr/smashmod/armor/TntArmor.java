@@ -38,7 +38,6 @@ public class TntArmor extends ItemArmor
 				player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 100, 1));
 				player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 101, 1));
 				player.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 102, 1));
-				player.capabilities.allowFlying = true;
 			}
 		}
 		
